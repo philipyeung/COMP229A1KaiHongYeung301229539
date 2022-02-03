@@ -1,0 +1,83 @@
+<!--
+//*******************************************************************
+//  COMP229   Personal Portfolio Website
+//  File name       : app.js
+//  Student’s Name  : Kai Hong Yeung
+//  StudentID       : 301229539
+//  Date            : 2 Feb 2022
+//*******************************************************************
+-->
+
+<!--Main Nav-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+
+        
+              <a class="navbar-brand" href="/">
+                <img src="/Assets/images/LogoYKH.png" alt="" width="80" height="80" class="d-inline-block align-text-top">
+                COMP229
+              </a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+<!--This Express site must include the pages from your Personal Portfolio 5 pages – your 
+Home page, an About Me page, a Projects page, a Services page, and a Contact Me page.-->
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- ml-auto => ms-auto (start); mr-auto => me-auto (end) -->
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+            <!-- fa-xs fa-sm fa-lg fa-2x -->
+          
+          <% if (title == "Home"){ %>
+            <li class="nav-item active">
+            <% } else  { %>
+            <li class="nav-item">
+            <% } %>              
+              <a class="nav-link" aria-current="page" href="/home"><i class="fas fa-globe-americas fa-sm"></i>Home</a>
+            </li>
+
+            <% if (title == "About") { %>
+              <li class="nav-item active">
+              <% } else  { %>
+              <li class="nav-item">
+              <% } %>
+                <a class="nav-link" href="/aboutme"><i class="fas fa-user-astronaut"></i> About Me </a>
+              </li>
+
+
+              
+              <% if (title == "About") { %>
+                <li class="nav-item active">
+                <% } else  { %>
+                <li class="nav-item">
+                <% } %>
+                  <a class="nav-link" href="/projects"><i class="fas fa-satellite"></i> Projects </a>
+                </li>
+
+                <% if (title == "About") { %>
+                  <li class="nav-item active">
+                  <% } else  { %>
+                  <li class="nav-item">
+                  <% } %>
+                    <a class="nav-link" href="/services"><i class="fas fa-rocket"></i> Services </a>
+                  </li>
+
+                  <% if (title == "About") { %>
+                    <li class="nav-item active">
+                    <% } else  { %>
+                    <li class="nav-item">
+                    <% } %>
+                      <a class="nav-link" href="/contactme"><i class="fas fa-broadcast-tower"></i> Contact Me </a>
+                    </li>
+
+
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+
+  
