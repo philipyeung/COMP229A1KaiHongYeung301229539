@@ -22,7 +22,7 @@ Home page, an About Me page, a Projects page, a Services page, and a Contact Me 
 
 /* GET home page. */
 router.get('/home', function(req, res, next) {
-  res.render('index', { title: 'Home', body: ''});
+  res.render('index', { title: 'Home'});
 });
 
 /* GET About Me page. */
@@ -42,7 +42,7 @@ router.get('/services', function(req, res, next) {
 
 /* GET Contact Me page. */
 router.get('/contactme', function(req, res, next) {
-  res.render('contactme', { title: 'Contact Me', body: '', response:""});
+  res.render('contactme', { title: 'Contact Me', body: '', response:''});
 });
 
 

@@ -14,11 +14,17 @@
 
 <%- include partials/main_nav.ejs %>
 
+<section>
 <div class="container">
+    <header>
     <h1><%= message %></h1>
     <h2><%= error.status %></h2>
+    </header>
+    <section>
     <pre><%= error.stack %></pre>
+    </section>
 </div>
+</section>
 
 <%- include partials/bottom_nav.ejs %>
 

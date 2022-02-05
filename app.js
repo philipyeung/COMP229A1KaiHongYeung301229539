@@ -52,15 +52,15 @@ app.post('/contactMessage', function(req, res){
     "contactNumber":contactNumber,
     "email":email,
     "message":message
-}
+  }
 
-//res.render('index.ejs', {title:'', body: req.body})
-res.render('contactme.ejs', {title:'', body: data, response: "Thanks for your contacting. I'll get back to you soon."})
+  //res.render('index.ejs', {title:'', body: req.body})
+  res.render('contactme.ejs', {title:'', body: data, response: "Thanks for your contacting. I'll get back to you soon."})
 
-return res.redirect('contactme.ejs');
+  return res.redirect('contactme.ejs');
 
-//TODO: redirect them back to the Home Page ?
-//return res.redirect('index.ejs');
+  //TODO: redirect them back to the Home Page ?
+  //return res.redirect('index.ejs');
 
 });
 ///////////////

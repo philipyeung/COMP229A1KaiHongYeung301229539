@@ -18,23 +18,21 @@
 <main class="p-5 mb-4 bg-primary rounded-3">
 
   <div class="container mt-3">
-    <h2><%= title %></h2>
+    <header><h2><%= title %></h2></header>
     <div class="mt-4 p-5 bg-secondary text-primary rounded  padding-1 border-radius-30 ">
 
 
       <div class="container">
         
         <div class="row align-items-start">            
-          <p>Feel free to contact me</p>               
+          <header><p>Feel free to contact me</p></header>
           <!--link to contact email-->
           <a href="mailto:kyeung39@my.centennialcollege.ca" class="link-success"><i class="fas fa-envelope-square"></i> kyeung39@my.centennialcollege.ca</a>
         </div>
         <br>
         <div class="row align-items-start">
-          <p>Or leave me some messages</p>
-
-        
-
+          <header><p>Or leave me some messages</p></header>
+          <section>
           <!--submit form for contact message-->
           <form action="/contactMessage" method="post" class="form-text">
             <div class="mb-3">
@@ -66,9 +64,11 @@
             <button type="submit" class="btn btn-success btn-lg" ">SEND</button>
             
             <div class="link-success"><%= response%></div>
-            <div><%= JSON.stringify(body)%></div>  
+            
+            <div class="link-info"><% if(body != ''){%> <%= JSON.stringify(body)%> <%}%></div>  
 
           </form>
+        </section>
         </div>
 
       </div>
